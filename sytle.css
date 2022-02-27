@@ -1,0 +1,386 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Poppins:ital,wght@0,400;0,600;1,200;1,700&family=Roboto:wght@300;700&display=swap');
+
+:root{
+   --yellow: #f9ca24;
+}
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+    
+}
+
+*::selection{
+    background-color: var(--yellow);
+    color: #333;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--yellow);
+}
+
+body{
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-left: 360px;
+}
+
+header{
+    position: fixed;
+    top: 0; left:0;
+    height: 100%;
+    width: 360px;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    z-index: 1000;
+}
+
+header #user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid white;
+    cursor: pointer;
+}
+
+#user #name{
+    font-size: 40px;
+    color: #fff;
+}
+
+#user #post{
+    color: #fff;
+    font-size: 20px;
+}
+
+header #navbar{
+    width: 100%;
+}
+
+header #navbar ul{
+    padding: 20px 20px;
+}
+
+header #navbar ul li a{
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+
+}
+
+header #navbar ul li a:hover{
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+
+#menubtn{
+    position: fixed;
+    top: 0px;
+    right: 25px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 40px;
+    padding: 5px;
+    z-index: 1000;
+    display: none;
+    
+
+}
+
+#home{
+    
+    height: 100vh;
+    position: relative;
+}
+#home-container{
+   margin: 30px;
+   position: absolute;
+   top: 250px;
+}
+
+#education{
+    height: 100vh;
+}
+
+
+#home-container h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(85, 155, 15);
+    
+}
+
+#home-container p{
+    font-size: 20px;
+}
+
+#home-container #profile-link{
+    font-size: 40px;
+    margin-top: 10px;
+    
+}
+#home-container #profile-link .fa{
+    color: rgb(85, 155, 15);
+}
+
+#home-container #profile-link{
+    transition: .5s;
+}
+#home-container #profile-link .fa:hover{
+    transform: translateY(-5px);
+}
+
+#education{
+    position: relative;
+}
+#edu-container{
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    margin-top: 200px;
+
+    
+}
+
+#edu-container #row1{
+    width: 70%;
+   
+}
+
+#inter h1{
+    font-size: 50px;
+    color: rgb(85, 155, 15);
+}
+#inter h2{
+    font-size: 20px;
+    margin-top: 20px;
+}
+#inter h3{
+    font-size: 15px;
+}
+#bsc h1{
+    font-size: 20px;
+    margin-top: 30px;
+    
+}
+
+
+#edu-container #row2{
+    width: 30%;
+    margin-top: 80px;
+    
+}
+#bsc-time{
+    margin-top: 80px;
+}
+
+
+
+#skill{
+    height: 100vh;
+    position: relative;
+}
+
+
+#skill-container{
+    padding: 15px;
+    position: absolute;
+    margin-top: 200px;
+}
+#skill-container h1{
+    font-size: 50px;
+    color: rgb(85, 155, 15);
+}
+#skill-container h2{
+    font-size: 30px;
+}
+#skill-container #skill-tools li{
+    list-style: none;
+}
+#skill-container #skill-tools ul{
+    display: flex;
+    flex-direction: row;
+    /* transition: 5s; */
+}
+#skill-container #skill-tools ul li{
+    font-size: 50px;
+    margin: 20px;
+    color: rgb(85, 155, 15);
+}
+#skill-container #skill-tools ul li:hover{
+    transform: translateY(-5px);
+    
+}
+#flow ul li{
+    list-style: none;
+    font-size: 20px;
+}
+
+#work{
+    margin-top: 30px;
+}
+
+#other-skill{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+#other-container{
+    position: absolute;
+    padding: 15px;
+    margin-top: 200px;
+    width: 90%;
+}
+#other-container h1{
+    font-size: 50px;
+    color: rgb(85, 155, 15);
+}
+#other-container p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+#portfolio{
+    height: 100vh;
+    position: relative;
+}
+#portfolio-container{
+    padding: 15px;
+    position: absolute;
+    padding-left: 120px;
+    margin-top: 70px;
+}
+#portfolio-container .card{
+    
+    width: 300px;
+    text-align: center;
+}
+
+
+#portfolio-container .card-img-top{
+    height: 250px;
+    width: 300px;
+}
+
+.card-body h5{
+    font-size: 20px;
+}
+
+#portfolio-container{
+    transition: .5s;
+}
+#portfolio-container .card:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+
+#contact{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#contact-container{
+    margin-top: 80px;
+    position: absolute;
+    padding: 15px;
+}
+#contact-container h1{
+    font-size: 50px;
+    color:rgb(85, 155, 15); 
+}
+#contact-details{
+    display: flex;
+}
+#contact-details ul li{
+    font-size: 20px;
+}
+#contact-details #info{
+    width: 350px;
+    margin-top: 100px;
+   
+}
+#contact-details #info h2{
+    font-size: 30px;
+}
+#contact-details #info ul li{
+    list-style: none;
+}
+#contact-details #text-area{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    
+    
+}
+#contact-container #text-area input{
+    margin: 8px;
+    height: 50px;
+    width: 500px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+#text-area #msg{
+    font-size: 20px;
+    background-color: #1a1a1a;
+    width: 500px;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 9px;
+}
+
+#contact-container #text-area #btn{
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+@media (max-width: 990px) {
+         #menubtn{
+             display: block;
+         }
+
+         header{
+             left: -150%;
+            
+         }
+ }
